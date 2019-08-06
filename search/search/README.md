@@ -14,6 +14,7 @@ Implemented a greedy solution to make Pacman eat all the dots in SearchAgents.py
 
 This project can be run through the command line. Use these commands (from commands.txt) to see my work:
 
+---
 python pacman.py -l tinyMaze -p SearchAgent
 python pacman.py -l mediumMaze -p SearchAgent
 python pacman.py -l bigMaze -z .5 -p SearchAgent
@@ -30,4 +31,5 @@ python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
 python pacman.py -l testSearch -p AStarFoodSearchAgent
 python pacman.py -l trickySearch -p AStarFoodSearchAgent
 python pacman.py -l bigSearch -p ClosestDotSearchAgent -z .5 
-python pacman.py -l bigSearch -p ApproximateSearchAgent -z .5 -q 
+python pacman.py -l bigSearch -p ApproximateSearchAgent -z .5 -q
+---

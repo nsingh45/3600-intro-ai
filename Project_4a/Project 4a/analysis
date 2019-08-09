@@ -1,0 +1,34 @@
+Q6: 
+Dataset: Connect 4
+Tree size: 41521.
+Average classification rate over all runs: 0.768000
+Results for training set:
+([0.741, 0.7815, 0.764, 0.7685, 0.7675, 0.769, 0.77, 0.7665, 0.79, 0.762], 0.768)
+The tree is large because 1) the data has ternary values (x, o, and s), 2) there is one attribute per board space for each example, 
+totaling 64 attributes per example, and 3) very few of those attributes allow the tree to make broad classifications (the probability of 
+each label at each space is very close). The data did fairly well because it is explicit and complete.
+
+Dataset: Cars
+Tree size: 408.
+Average classification rate over all runs: 0.950000
+Results for training set:
+([0.94, 0.96, 0.945, 0.92, 0.955, 0.925, 0.96, 0.97, 0.96, 0.97, 0.95, 0.97, 0.925, 0.97, 0.96, 0.945, 0.935, 0.965, 0.93, 0.945], 0.95)
+The tree did well and is fairly small for this dataset because there were many attributes that clearly divided the data into 
+subsets by label. 
+
+Dataset: Dummy 1
+Results for training set:
+Tree size: 3.
+(1.0, [])
+There's no data; obviously there's no classification rate. The tree needs more to classify properly.
+
+Dataset: Dummy 2
+Tree size: 11.
+Results for training set:
+(0.65, [(0, 1), (0, 1), (1, 0), (0, 1), (0, 1), (0, 1), (1, 0)])
+The training data was too simple and too similar. 
+
+Q7:
+With Connect Four, the decision tree can be used to analyze the possible subsequent moves 
+and their expected reward using the Bellman equation. The decision tree using the cars could be useful 
+on a Web site to learn users' car preferences based on user-supplied demographic data and disqualifiers.
